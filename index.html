@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assigment</title>
+    <title>Tugas 3</title>
 </head>
 <body>
-    <h1>Ini adalah halaman tugas</h1>
+    <h1>Ini adalah Halaman Pengecekan</h1>
+    <div class="checker-form">
+        <div class="hari-esok">
+            <h2>Cek Hari Esok</h2>
+            <p>Masukkan Hari Apa Sekarang</p>
+            <input id="checker1">
+            <button type="button" onclick="besokHariApa()">Cek Sekarang</button>
+            <p id="print1"></p>
+        </div>
+
+        <div class="nilai">
+            <h2>Cek Klasifikasi Nilai</h2>
+            <p>Masukkan Nilai Anda (1-100)</p>
+            <input id="checker2">
+            <button type="button" onclick="penentuanNilai()">Cek Sekarang</button>
+            <p id="print2"></p>
+        </div>
+
+        <div class="genap">
+            <h2>Cek Perulangan Genap</h2>
+            <p>Masukkan Angka</p>
+            <input id="checker3">
+            <button type="button" onclick="genap()">Cek Sekarang</button>
+            <p id="print3"></p>
+        </div>
+
+        <div class="ganjil">
+            <h2>Cek Perulangan Ganjil</h2>
+            <p>Masukkan Angka</p>
+            <input id="checker4">
+            <button type="button" onclick="ganjil()">Cek Sekarang</button>
+            <p id="print4"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

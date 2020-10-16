@@ -1,58 +1,73 @@
 //Nomor 1 Penentuan Hari Esok
 
-function besokHariApa(hari){
+function besokHariApa(){
+    var hari, hasil;
+    hari = document.getElementById("checker1").value;
     if (hari === "senin"){
-        return "besok adalah hari selasa";
+        hasil = "Besok adalah hari selasa";
     } else if (hari === "selasa"){
-        return "besok adalah hari rabu";
+        hasil = "Besok adalah hari rabu";
     }else if (hari === "rabu"){
-        return "besok adalah hari kamis";
+        hasil = "Besok adalah hari kamis";
     }else if (hari === "kamis"){
-        return "besok adalah hari jumat";
+        hasil = "Besok adalah hari jumat";
     }else if (hari === "jumat"){
-        return "besok adalah hari sabtu";
+        hasil = "Besok adalah hari sabtu";
     }else if (hari === "sabtu"){
-        return "besok adalah hari minggu";
+        hasil = "Besok adalah hari minggu";
     }else if (hari === "minggu"){
-        return "besok adalah hari senin";
+        hasil = "Besok adalah hari senin";
     }else{
-        return "bukan nama hari";     
+        hasil = "bukan nama hari";     
     }    
+    document.getElementById("print1").innerHTML = hasil;
 }
-let day = "kamis"
-console.log(besokHariApa(day))
-console.log(besokHariApa("minggu"))
+
 
 //Nomor 2 Penentuan Nilai dari Angka Jadi Abjad
 
-function penentuanNilai(angka){
-    if (angka <= 100 && angka >= 90){
-        return "Nilai anda adalah A ";
-    }else if (angka <= 89 && angka >= 75){
-        return "Nilai anda adalah B";
-    }else if (angka <= 74 && angka >= 60){
-        return "Nilai anda adalah C";
-    }else if (angka <= 59 && angka >= 50){
-        return "Nilai anda adalah D";
-    }else if (angka <= 49 && angka >= 0){
-        return "Maaf anda tidak lulus";
+function penentuanNilai(){
+    var nilai, mutu;
+    nilai = document.getElementById("checker2").value;
+    if (nilai >= 90 && nilai <= 100){
+        mutu = "Nilai anda adalah A";
+    }else if (nilai >= 75 && nilai <= 89){
+        mutu = "Nilai anda adalah B";
+    }else if (nilai >= 60 && nilai <= 74){
+        mutu = "Nilai anda adalah C";
+    }else if (nilai >= 50 && nilai <= 59){
+        mutu = "Nilai anda adalah D";
+    }else if (nilai >= 0 && nilai <= 49){
+        mutu = "Maaf anda tidak lulus";
     }
+    document.getElementById("print2").innerHTML = mutu;
 }
-console.log(penentuanNilai(80))
-console.log(penentuanNilai(30))
 
 //Nomor 3 Perulangan Bilangan Genap
- 
-for(var genap = 1; genap <= 20; genap++){
-    if((genap%2)==0){
-        console.log(genap);
+
+function genap(){
+    var angkaGenap;
+    var print = "";
+    angkaGenap = document.getElementById("checker3").value;
+    for(var i = 0; i <= angkaGenap; i++){
+        if((i%2)==0){
+            print += i + "Adalah ngka Genap<br>";
+            i++;
+        }
     }
+    document.getElementById(print3).innerHTML = print;       
 }
 
-//Nomor 4 Perulangan Bilangan Genap
+//Nomor 4 Perulangan Bilangan Ganjil
 
-for(var ganjil = 1; ganjil <= 15; ganjil++){
-    if((ganjil%2)!==0){
-        console.log(ganjil);
+function ganjil(){
+    var angkaGanjil;
+    var display = "";
+    angkaGanjil = document.getElementById("checker4").value;
+    for(var i = 1; i <= angkaGanjil; i++){
+        if((i%2)!==0){
+            display += i + "Adalah angka ganjil<br>";
+            i++;
+        }
     }
 }
