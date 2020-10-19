@@ -2,7 +2,7 @@
 
 function besokHariApa(){
     var hari, hasil;
-    hari = document.getElementById("checker1").value;
+    hari = document.getElementById("checker1").value.toLowerCase();
     if (hari === "senin"){
         hasil = "Besok adalah hari selasa";
     } else if (hari === "selasa"){
@@ -51,11 +51,11 @@ function genap(){
     angkaGenap = document.getElementById("checker3").value;
     for(var i = 0; i <= angkaGenap; i++){
         if((i%2)==0){
-            print += i + "Adalah ngka Genap<br>";
+            print += i + ". " + "Adalah angka Genap<br>";
             i++;
         }
     }
-    document.getElementById(print3).innerHTML = print;       
+    document.getElementById("print3").innerHTML = print;       
 }
 
 //Nomor 4 Perulangan Bilangan Ganjil
@@ -66,8 +66,9 @@ function ganjil(){
     angkaGanjil = document.getElementById("checker4").value;
     for(var i = 1; i <= angkaGanjil; i++){
         if((i%2)!==0){
-            display += i + "Adalah angka ganjil<br>";
+            display += i + ". " +  "Adalah angka ganjil<br>";
             i++;
         }
     }
+    document.getElementById("print4").innerHTML = display;
 }
