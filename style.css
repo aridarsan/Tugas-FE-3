@@ -6,6 +6,9 @@ h1{
   margin: 10px auto;
   padding: 20px;
 }
+body{
+  background-color: whitesmoke;
+}
 .checker-form{
   text-align: center;
   border: 2px solid blue;
@@ -15,4 +18,34 @@ h1{
   padding-bottom: 10px;
   width: 500px;
   background-color: aquamarine;
+}
+button{
+  background-color: thistle;
+  border-radius: 3px;
+  height: 30px;
+}
+button:hover{
+  background-color: violet;
+  border-radius: 3px;
+}
+input{
+  background-color: whitesmoke;
+  border-radius: 3px;
+  width: 130px;
+  height: 30px;
+}
+input:hover{
+  background-color: yellow;
+}
+a{
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  color:rgb(94, 94, 221);
+  margin: 10px 515px;
+  font-size: 28px;
+}
+a:hover{
+  color: darkgreen;
+  font-weight: bold;
 }
