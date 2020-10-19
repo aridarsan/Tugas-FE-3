@@ -8,6 +8,10 @@ h1{
 }
 body{
   background-color: whitesmoke;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .checker-form{
   text-align: center;
@@ -42,7 +46,6 @@ a{
   text-decoration: none;
   align-items: center;
   color:rgb(94, 94, 221);
-  margin: 10px 515px;
   font-size: 28px;
 }
 a:hover{
